@@ -78,14 +78,21 @@ A solução utiliza imagens reais, anotadas no **Roboflow**, e processadas com *
 
 ---
 
-🧩 Estrutura do Projeto
+## 🧩 Estrutura do Projeto
 
 SysTrack-Vision/
-├── valid/                         # Imagens e anotações do dataset
-│   ├── _annotations.coco.json     # Anotações no formato COCO
-│   └── *.jpg                      # Imagens reais do pátio com motos
-├── Iot.py                         # Script principal de visão computacional
-├── resultado_numerado.png         # Imagem gerada com motos numeradas
+│
+├── valid/                          # Pasta com imagens e anotações
+│   ├── _annotations.coco.json      # Anotações no formato COCO
+│   └── imagem1.jpg                 # Imagens reais do pátio com motos
+│   └── imagem2.jpg                 # (outras imagens utilizadas)
+│
+├── Iot.py                          # Script principal em Python
+│                                   # - Processa as imagens
+│                                   # - Desenha caixas e numera motos
+│
+├── resultado_numerado.png          # Saída gerada pelo script
+│                                   # - Imagem com motos numeradas
 
 ---
 
