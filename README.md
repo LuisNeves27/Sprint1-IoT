@@ -78,6 +78,17 @@ A solução utiliza imagens reais, anotadas no **Roboflow**, e processadas com *
 
 ---
 
+🧩 Estrutura do Projeto
+
+SysTrack-Vision/
+├── valid/                         # Imagens e anotações do dataset
+│   ├── _annotations.coco.json     # Anotações no formato COCO
+│   └── *.jpg                      # Imagens reais do pátio com motos
+├── Iot.py                         # Script principal de visão computacional
+├── resultado_numerado.png         # Imagem gerada com motos numeradas
+
+---
+
 ## 🧪 Como Rodar o Projeto Localmente
 
 1. Instale as dependências:
